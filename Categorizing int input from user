@@ -1,0 +1,31 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Categorizing_height_in_Centimeters_example
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+           ///The first few lines of code are to accept an input for your height. 
+            int hei;
+            Console.WriteLine("Enter your height in centimeters in order to determine your height class");
+            hei = Convert.ToInt32(Console.ReadLine());
+
+            ///Depending on the input of the user, they will be classified into the following categories of height.
+            if (hei < 150)
+            {
+                Console.WriteLine("Dwarf height");
+            }
+            else if (hei >= 150 && hei < 165)
+                Console.WriteLine("Average height");
+            else if (hei >= 165 && hei < 195)
+                Console.WriteLine("Tall height");
+            else
+                Console.WriteLine("Abnormal height");           
+        }
+    }
+}
