@@ -1,0 +1,36 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+/* Understanding the basics of values and operations */
+
+namespace ConsoleApp2
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            int a = 5;
+            int b = 3;
+            int c;
+
+            c = a + b;
+            Console.WriteLine("The sum of two numbers is {0}", c);
+            Console.ReadKey();
+
+            c = a - b;
+            Console.WriteLine("The difference of two numbers is {0}", c);
+            Console.ReadKey();
+
+            c = a * b;
+            Console.WriteLine("The multiplication of two numbers is {0}", c);
+            Console.ReadKey();
+
+            c = a / b;
+            Console.WriteLine("The division of two numbers is {0}", c);
+            Console.ReadKey();
+        }
+    }
+}
