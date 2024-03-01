@@ -1,0 +1,34 @@
+using System;
+using System.Collections.Generic;
+using System.Globalization;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Pyramid_numbers_examplw
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            int rows, columns, t = 1;
+            rows = Convert.ToInt32(Console.ReadLine());
+            columns = rows * 2 - 1;
+
+            ///Loop for the the amount of rows inputted. 
+            for (int i = 1; i <= rows; i++)
+            {
+                for (int j = 1; j <= columns - i; j++) ///
+                {
+                    Console.Write("");
+                }
+                for (int k = 1; k <= i; k++)
+                {
+                    Console.Write("{0}", t++);
+                    Console.Write("");
+                }
+                Console.Write("\n");
+            }
+        }
+    }
+}
